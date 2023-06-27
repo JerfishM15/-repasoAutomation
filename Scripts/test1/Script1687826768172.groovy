@@ -41,6 +41,22 @@ WebUI.setText(findTestObject('Object Repository/loginPage/passwordField'), passw
 WebUI.click(findTestObject('Object Repository/loginPage/loginBtn'))
 
 
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/shopPage/title'), 10)) {
+	
+	String product = WebUI.getText(findTestObject('Object Repository/shopPage/productName'))
+	if(product == GlobalVariable.product) {
+		WebUI.click(findTestObject('Object Repository/shopPage/productBtn'))
+		} else {
+		
+			WebUI.closeBrowser();
+		}
+	
+	} else {
+		WebUI.closeBrowser();
+	}
+
+	
+	
 } else {
 	WebUI.closeBrowser();
 }

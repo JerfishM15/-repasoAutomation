@@ -9,4 +9,9 @@
       <initValue>'https://www.saucedemo.com/'</initValue>
       <name>testPage</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Sauce Labs Backpack'</initValue>
+      <name>product</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
